@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 bot_key = os.getenv("BOT_KEY") 
-print(bot_key)
+print(f'this is the key ->{bot_key}<-')
 
 intents = discord.Intents.default()  
 intents.message_content = True 
