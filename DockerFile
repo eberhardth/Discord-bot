@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 
-ENV SECRET_KEY = ${SECRET_KEY}
+ENV BOT_KEY = ${SECRET_KEY}
 
 COPY . /app
 
