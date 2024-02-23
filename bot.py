@@ -22,5 +22,11 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send('Pong!')
 
+@bot.command(aliases=['hjälp', 'plz'])
+async def Help(ctx):
+    embed = discord.Embed(title='Commands', description='List of available commands:')
+    embed.add_field(name='smashhelp', value='Shows the commands for a random smashdown.')
+    embed.add_field(name='godnatt', value='Set a time for Mio to remind you to sleep.\nUsage: !godnatt hh mm')
+    await ctx.send(embed=embed)
 
 bot.run(bot_key)
